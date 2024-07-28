@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { validateDiscordUser } from "../utils/validations/users.validations";
+import { validateDiscordUser } from "../utils/middlewares/users.middlewares";
 import { getBotGuilds } from "../utils/bot/guilds.bot";
 
 const router = Router();
