@@ -59,7 +59,7 @@ app.use(passport.session());
 app.use(router);
 
 app.listen(port, () => {
-  console.log(`Server started on port ${port}.`);
+  console.log(`Server started on port ${port}, on URL ${process.env.APP_URL} .`);
 });
 
 export default app;
