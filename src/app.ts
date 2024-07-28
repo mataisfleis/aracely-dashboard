@@ -9,7 +9,7 @@ import { Strategy } from "passport-discord";
 import "dotenv/config";
 
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 if (!process.env.CLIENT_ID || !process.env.CLIENT_SECRET)
   throw new Error("CLIENT_ID or CLIENT_SECRET is required");
